@@ -12,7 +12,7 @@ You can now install the jinja2 module.
 $ pip install jinja2
 ```
 
-You can now run the script passing an argument.
+You can now run the script (it will prompt for arguments).
 
 ```sh
 $ python app.py
