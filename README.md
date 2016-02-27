@@ -15,5 +15,5 @@ $ pip install jinja2
 You can now run the script passing an argument.
 
 ```sh
-$ python app.py world
+$ python app.py
 ```

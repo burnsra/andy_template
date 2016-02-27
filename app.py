@@ -7,7 +7,14 @@ TEMPLATE_FILE = "template.tmp"
 RENDER_FILE = "template_rendered.txt"
 template = templateEnv.get_template( TEMPLATE_FILE )
 
-templateVars = { "something" : sys.argv[1] }
+py3 = sys.version_info[0] > 2
+
+if py3:
+  response = input("Please enter your name: ")
+else:
+  response = raw_input("Please enter your name: ")
+
+templateVars = { "something" : response }
 
 outputText = template.render( templateVars )
 
